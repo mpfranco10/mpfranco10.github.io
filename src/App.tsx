@@ -7,12 +7,7 @@ import useHotjar from "react-use-hotjar";
 const myCustomLogger = console.info;
 
 function App() {
-  const { initHotjar } = useHotjar();
   const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    initHotjar(5194355, 6, false, myCustomLogger);
-  }, [initHotjar]);
 
   return (
     <>
