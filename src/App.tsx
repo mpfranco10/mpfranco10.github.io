@@ -11,7 +11,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    initHotjar(1234567, 6, false, myCustomLogger);
+    initHotjar(5194355, 6, false, myCustomLogger);
   }, [initHotjar]);
 
   return (
