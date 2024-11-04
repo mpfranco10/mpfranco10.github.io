@@ -1,15 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { hotjar } from "react-hotjar";
 
 function App() {
   const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    hotjar.initialize({ id: 5194739, sv: 6 });
-  }, []);
 
   return (
     <>
